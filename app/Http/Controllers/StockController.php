@@ -20,11 +20,9 @@ class StockController extends Controller
         ]);
     
         // Upload the file to storage
-        $path = $request->file('file')->store('imports');
-        $batch = Bus::batch([])->dispatch();
-        $batch->add(new ProcessFilesJob($path));
-        
-        return back()->with('success', 'CSV file queued for import.');
+        $file = $request->file('file');
+        Excel::import(new StockImport, $file);
+        return back()->with('success', 'CSV file imported successfully.');
     }
 
     public function export()
