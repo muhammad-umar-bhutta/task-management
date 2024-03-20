@@ -42,7 +42,7 @@
                             <input type="file" name="file"
                                 class="border-2 w-[100%] py-2 px-4 rounded-md border-gray-300 shadow-sm focus:outline-none focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
                             <button type="submit"
-                                class="bg-blue-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded-md">Import
+                                class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-md">Import
                                 Stock Data</button>
                         </div>
                     </form>
