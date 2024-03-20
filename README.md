@@ -41,10 +41,11 @@ Create a copy of the .env.example file and name it .env.
 ```
 Update .env file with database credentials and other necessary configurations.
 
-### Run Migrations:
+### Run Migrations and Seed Data:
 
 ```bash
     php artisan migrate  
+    php artisan db:seed --class=UsersSeeder
 ```
 
 ### Start Development and Vite Server:
